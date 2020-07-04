@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn-pattern {
+    padding: 10px 40px;
+    font-style: inherit;
+    font-size: 18px;
+    color: white;
+    background-color: #EB2D2D;
+    border: 0;
+    cursor: pointer;
+    border-bottom: 5px solid #B21E1E;
+    font-style: italic;
+}
+
+.btn-pattern:hover {
+    background-color: #9b1e1e;
+    border-bottom-color: #6d1212;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .desktop-menu {
+    float: right;
+    margin-top: 26px;
+    margin-right: 25px;
+}
+
+header .desktop-menu li {
+    display: inline-block;
+}
+
+header .desktop-menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 28px;
+}
+
+header .desktop-menu li a:hover {
+    color: rgb(255, 34, 34);
+}
+
+header .mobile-menu, header input, header label {
+    display: none;
+}
+
+header label {
+    float: right;
+    margin-right: 25px;
+}
+
+header .mobile-menu li{
+    width: 100%;
+    list-style: none;
+}
+
+header .mobile-menu li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    display: block;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+header .mobile-menu li a:hover {
+    background-color: red;
+}
+
+/* Background Section */
+
+section.bg {
+    background-color: black;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    padding: 100px 0;
+}
+
+section.bg .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+section.bg .container div {
+    font-size: 26px;
+    padding: 15px 70px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 45px;
+    margin-left: 25px;
+}
+
+section.bg .container div span {
+    margin-left: -30px;
+    font-style: italic;
+}
+
+section.bg .container .red-box {
+    background-image: url("../images/box-text.png");
+    color: white;
+}
+
+section.bg .container .white-box {
+    background-image: url("../images/box-white-text.png");
+}
+
+/* Spotlight Section */
+
+section.spotlight-cars {
+    padding: 100px 0;
+}
+
+section.spotlight-cars .title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section.spotlight-cars .title .line{
+    height: 2px;
+    background-color: black;
+}
+
+section.spotlight-cars .title h1 {
+    transform: translateY(50%);
+    background-color: white;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+section.spotlight-cars .cars .car {
+    float: left;
+    width: calc(100% / 3);
+    border: 8px solid white;
+    font-style: italic;
+    font-size: 14px;
+}
+
+section.spotlight-cars .cars .car .car-bg {
+    background-image: url("../images/carro1.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 15px;
+}
+
+section.spotlight-cars .cars .car h2 {
+    font-size: 18px;
+}
+
+section.spotlight-cars .cars .car p {
+    margin: 15px 0;
+}
+
+/* Serv-Dep Section */
+
+section.serv-dep, section.serv-dep > div {
+    display: flex;
+    width: 100%;
+}
+
+section.serv-dep .service {
+    color: white;
+    background-color: #242424;
+    padding: 100px 0;
+    justify-content: flex-end;
+}
+
+section.serv-dep h2 {
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.serv-dep .service ul {
+    list-style-position: inside;
+    margin: 22px 50px 0 0;
+    display: inline-block;
+}
+
+section.serv-dep .service ul li {
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+section.serv-dep .service button {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+section.serv-dep .service .context {
+    float: right;
+    margin-right: 200px;
+}
+
+section.serv-dep .depoiment {
+    background-color: #EB2D2D;
+    align-items: center;
+    padding: 100px 60px;
+    color: white;
+    font-size: 22px;
+}
+
+section.serv-dep .depoiment .signature img {
+    cursor: pointer;
+    width: 14px;
+}
+
+/* Contact Section */
+
+section.form-container .title {
+    text-align: center;
+}
+
+section.form-container .line {
+    height: 2px;
+    background-color: black;
+}
+
+section.form-container .title h1 {
+    background-color: white;
+    transform: translateY(50%);
+    padding: 0 20px;
+    font-size: 28px;
+    display: inline-block;
+}
+
+section.form-container .form {
+    margin-top: 50px;
+}
+
+section.form-container .form form {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 25px;
+}
+
+section.form-container .form form div {
+    width: 100%;
+}
+
+section.form-container .form form div.w50 {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+section.form-container .form form div.w50 input {
+    width: 49%;
+}
+ 
+section.form-container .form form div input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+section.form-container .form form .btn-wraper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+ 
+/* Footer */
+
+footer {
+    background-color: #252525;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-menu {
+    margin-left: 25px;
+}
+
+footer .footer-menu li {
+    display: inline-block;
+}
+
+footer .footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 28px;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+@media (max-width: 1400px) {
+    section.serv-dep .service {
+        justify-content: center;
+    }
+
+    section.serv-dep .service ul {
+        display: initial
+    }
+
+    section.serv-dep .service button {
+        display: initial; 
+        margin-top: 30px;
+    }
+
+    section.serv-dep .service .context {
+        margin-right: 0;
+    }
+
+    section.serv-dep .service h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    section.spotlight-cars .cars .car {
+        width: 60%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        border: 1px solid black;
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    section.spotlight-cars .cars .car h2 {
+        font-size: 26px;
+    }
+
+    section.spotlight-cars .cars .car p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    section.bg {
+        background-size: cover;
+        background-position: center left;
+    }
+
+    footer .container {
+        justify-content: center;
+    }
+
+    footer .footer-menu {
+        display: none;
+    }
+
+    header .desktop-menu {
+        display: none;
+    }
+
+    header label {
+        margin-top: 26px;
+        display: initial;
+        cursor: pointer;
+    }
+
+    input#mobile-menu-action:checked ~ .mobile-menu {
+        display: initial;
+        top: 0;
+    }
+
+    section.serv-dep {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    section.form-container .form form div.w50 {
+        flex-direction: column;
+    }
+
+    section.form-container .form form div.w50 input {
+        width: 100%;
+    }
+
+    section.form-container .form form div.w50 input:nth-of-type(1) {
+        margin-bottom: 25px;
+    }
+}
